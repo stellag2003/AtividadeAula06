@@ -1,0 +1,85 @@
+ int resposta;
+        int resposta2;
+        string resposta3= "Manha";
+        
+    
+        
+       Console.WriteLine("Ola, bem-vindo(a) ao nosso site!");
+       Console.WriteLine("Aqui temos os meses disponiveis para a sua proxima viagem:");
+       Console.WriteLine("-08-Agosto");
+       Console.WriteLine("-09-Setembro");
+       Console.WriteLine("-10-Outubro");
+       Console.WriteLine("Digite um dos numeros acima para continuar");
+       resposta=int.Parse(Console.ReadLine());
+       
+       if(resposta <8 )
+        {
+           Console.WriteLine("Mes invalido");
+           Main(null);
+           return;
+        }
+        
+        if(resposta >10)
+        {
+            Console.WriteLine("Mes invalido");
+            Main(null);
+            return;
+        }
+        
+       Console.WriteLine("Agora escolha o dia da sua viagem!");
+       Console.WriteLine("Temos datas disponiveis do dia 6 ao 21");
+       resposta2=int.Parse(Console.ReadLine());
+       
+       if(resposta2 < 6)
+       {
+           Console.WriteLine("Dia invalido");
+           Main(null);
+           return;
+       }
+       
+       if(resposta2 >21)
+       {
+           Console.WriteLine("Dia invalido");
+           Main(null);
+           return;
+       }
+       
+       Console.WriteLine("Estamos quase no fim! Em qual periodo voce gostaria de viajar?");
+       Console.WriteLine("-Manha");
+       Console.WriteLine("-Tarde");
+       Console.WriteLine("-Noite");
+       resposta3= Console.ReadLine();
+       
+       if(resposta3 == "Manha")
+       {
+          Console.WriteLine($"Parabens!Sua compra foi finalizada com sucesso");
+       Console.WriteLine($"Aqui esta o seu recibo,viagem agendada para: {resposta2}/{resposta} {resposta3}");  
+       }
+       
+       if(resposta3 =="Tarde")
+       {
+           Console.WriteLine($"Parabens!Sua compra foi finalizada com sucesso");
+       Console.WriteLine($"Aqui esta o seu recibo,viagem agendada para: {resposta2}/{resposta} {resposta3}"); 
+       }
+       
+       if(resposta3 =="Noite")
+       {
+          Console.WriteLine($"Parabens!Sua compra foi finalizada com sucesso");
+       Console.WriteLine($"Aqui esta o seu recibo,viagem agendada para: {resposta2}/{resposta} {resposta3}");  
+       }
+       
+        else
+      {
+          Console.WriteLine("Periodo invalido");
+          Main(null);
+          return;
+      }
+       
+       
+      
+     
+      
+     
+          
+      
+      
