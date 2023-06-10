@@ -1,6 +1,6 @@
  int resposta;
         int resposta2;
-        string resposta3= "Manha";
+        string resposta3;
         
     
         
